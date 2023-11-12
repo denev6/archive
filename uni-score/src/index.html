@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang=ko>
+
+<head>
+    <meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width, initial-scale=1.0" name=viewport>
+    <link href=./main.css rel=stylesheet>
+    <script src=./main.js>
+    </script>
+    <title>대학 등급</title>
+</head>
+
+<body>
+    <div id=info-bg onclick=closeInfoBox()> </div>
+    <div id=info-box>
+        <div id=close-box onclick=closeInfoBox()> X </div>
+        <div id=info-text> </div>
+    </div>
+    <header>
+        <h2> 2023학년도 등급 계산 </h2>
+        <div id=denev-fav> <span id=denev-text> 개발자 </span> <a href=https://github.com/Denev6 target=_blank>
+                <img src=./denev.png> </a> </div>
+    </header>
+    <div id=grade-box>
+        <ul>
+            <li>주요과목 평균: <span class=mean-grade>0.00</span> (진로교과 제외)</li>
+            <li>'국영수과' 평균: <span class=mean-grade>0.00</span> (진로교과 제외)</li>
+        </ul>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th> 학과 </th>
+                <th id=my-score-col> 점수 </th>
+                <th id=my-grade-col onclick=showDetail(0)> *등급 </th>
+                <th class=csat-grade> 최저 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th> 대학명1 </th>
+                <td class=myScore>000.00</td>
+                <td class=myGrade>0.00 (0.00)</td>
+                <td class=csat-grade> <a class=addition-info onclick=showDetail(1)> <img class=question-mark
+                            src=./question-mark.svg> </a> </td>
+            </tr>
+            <tr>
+                <th> 대학명2 </th>
+                <td class=myScore>000.00</td>
+                <td class=myGrade>0.00 (0.00)</td>
+                <td class=csat-grade> <a class=addition-info onclick=showDetail(2)> <img class=question-mark
+                            src=./question-mark.svg> </a> </td>
+            </tr>
+            <tr>
+                <th> 대학명3 </th>
+                <td class=myScore>000.00</td>
+                <td class=myGrade>0.00 (0.00)</td>
+                <td class=csat-grade> <a class=addition-info onclick=showDetail(3)> <img class=question-mark
+                            src=./question-mark.svg> </a> </td>
+            </tr>
+            <!-- 생략 -->
+        </tbody>
+    </table>
+    <div id=to-details> <a href=./details.html target=_blank>반영 방법 자세히 보기</a> </div>
+    <p id=update-date> 최신 업데이트: 2023-00-00 </p>
+</body>
+
+</html>

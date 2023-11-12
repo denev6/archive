@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/fav/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../src/fav/favicon.ico" type="image/x-icon">
+    <link href="../src/reset.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Palette</title>
+</head>
+
+<body>
+    <style>
+        main {
+            background: #262734;
+            box-shadow: 10px 0 10px 0 #262734;
+        }
+
+        #progress-bar {
+            width: 0%;
+        }
+
+        .img {
+            display: none;
+        }
+
+        .fade-in {
+            animation: fadein 1s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0.2;
+            }
+
+            to {
+                opacity: 0.7;
+            }
+        }
+    </style>
+    <a href="../index.html" class="fixed w-6 h-6 inset-6 font-bold invisible lg:visible">P</a>
+    <div class="h-24">
+        <!--margin-->
+    </div>
+    <main class="w-full py-12">
+        <div class="w-min mx-auto">
+            <div class="image relative w-96 h-96 opacity-70 fade-in">
+                <img class="w-96 h-96" src="../src/s-1.jpg">
+            </div>
+            <div class="image relative w-96 h-96 opacity-70 fade-in">
+                <img class="w-96 h-96" src="../src/s-2.jpg">
+            </div>
+            <div class="image relative w-96 h-96 opacity-70 fade-in">
+                <img class="w-96 h-96" src="../src/s-3.jpg">
+            </div>
+        </div>
+        <div class="relative mx-auto w-96 h-0.5">
+            <div id="progress-bar" class="absolute h-0.5 bg-indigo-400"></div>
+        </div>
+    </main>
+    <div class="text-center my-12">
+        Use `ArrowRight-Key` to slide the image.
+    </div>
+    <script>
+        let index = 0;
+        let progressBarWidth = 0;
+
+        showNextImg();
+        let interval = setInterval(_execProgress, 50);
+
+        document.addEventListener("keydown", _keyDownHandler, false);
+        function _keyDownHandler(event) {
+            // right-arrow-key on the keyboard
+            if (event.key == 37 || event.key == "ArrowRight") {
+                clearInterval(interval);
+                progressBarWidth = 0;
+                showNextImg();
+                interval = setInterval(_execProgress, 50);
+            }
+        }
+
+        // progress-bar
+        function _execProgress() {
+            const bar = document.getElementById("progress-bar");
+            if (progressBarWidth >= 100) {
+                progressBarWidth = 0;
+                showNextImg();
+            } else {
+                progressBarWidth++;
+                bar.style.width = progressBarWidth + "%";
+            }
+        }
+
+        function showNextImg() {
+            // www.w3schools.com
+            let i;
+            let slides = document.getElementsByClassName("image");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            index++;
+            if (index > slides.length) {
+                index = 1
+            }
+            slides[index - 1].classList.remove("fade-in");
+            slides[index - 1].style.display = "block";
+            slides[index - 1].classList.add("fade-in");
+        }
+    </script>
+</body>
+
+</html>
