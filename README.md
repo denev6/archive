@@ -21,5 +21,5 @@ Healthy Lifestyle Cities Report 2021
 - `tkinter-design`: tkinter 연습 
 - `css-palette`: CSS, JS 연습
 - `uni-score`: 대학별 점수 계산 후 웹으로 공유
-- `youtube-download`: Youtube에서 음원 추출
+- `yt-download`: Youtube에서 음원 추출
 - `TDCN-2022`: TDCN 학습 기록
