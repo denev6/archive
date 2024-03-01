@@ -23,7 +23,7 @@ Sub ProcessData()
     prevLabel = Cells(startRow, labelCol).Value
     partialSum = Cells(startRow, numCol).Value
 
-    For row = startCol+1 To endRow
+    For row = startRow+1 To endRow
         currentLabel = Cells(row, labelCol)
         If prevLabel <> currentLabel Then
             endPointer = row - 1
@@ -52,7 +52,7 @@ Sub Format()
     Call writeIndex(startRow, endRow, numCol)
 End Sub
 
-Sub showHiddenRows()
+Sub ShowHiddenRows()
     Rows("3:32").Hidden = False
 End Sub
 
