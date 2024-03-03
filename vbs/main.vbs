@@ -23,7 +23,7 @@ Sub ProcessData()
     prevLabel = Cells(startRow, labelCol).Value
     partialSum = Cells(startRow, numCol).Value
 
-    For row = startRow+1 To endRow
+    For row = startRow+1 To endRow+1
         currentLabel = Cells(row, labelCol)
         If prevLabel <> currentLabel Then
             endPointer = row - 1
