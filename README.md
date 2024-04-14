@@ -1,25 +1,4 @@
-# 1. Data practice
-
-World Happiness Report (2015 ~ 2022)
-
-- Source: [Kaggle/world_happiness](https://www.kaggle.com/datasets/mathurinache/world-happiness-report)
-- Data License: CC0 (Public Domain)
-
-Healthy Lifestyle Cities Report 2021
-
-- Source: [Kaggle/healthy-lifestyle-cities](https://www.kaggle.com/datasets/prasertk/healthy-lifestyle-cities-report-2021)
-- Data License: CC0 (Public Domain)
-
-
-# 2. transformer
-
-- Data: [월간 데이콘 발화자의 감정인식](https://dacon.io/competitions/official/236027/data)
-- Model: [Hugging Face](https://huggingface.co/models)
-
-# Others
-
-- `tkinter-design`: tkinter 연습 
-- `css-palette`: CSS, JS 연습
-- `uni-score`: 대학별 점수 계산 후 웹으로 공유
-- `yt-download`: Youtube에서 음원 추출
-- `TDCN-2022`: TDCN 학습 기록
+- `TDCN-2022`: 논문을 기반으로 TDCN 구현 및 학습 기록
+- `learn-go`: 백준에서 Go를 이용한 문제 풀이
+- `data-practice`: 데이터 시각화 연습
+- `uni-score`: 학생 점수 분석 후 대학 별 환산 점수 및 합격 데이터와 비교
