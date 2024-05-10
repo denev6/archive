@@ -26,10 +26,13 @@ $ python downloader.py url.txt mp4 -q high
 $ sh test.sh
 ```
 
-# Open Source
+# Requirements
+
+python3
 
 ```bash
 $ pip install pytube
 $ pip install pydub
 $ pip install ffmpeg
+$ brew install ffmpeg
 ```
