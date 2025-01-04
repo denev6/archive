@@ -1,0 +1,3 @@
+.prettierignore
+chromedriver.exe
+__pycache__/
