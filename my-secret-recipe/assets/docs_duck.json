@@ -1,0 +1,5 @@
+{
+  "title": "asyncio 비동기 처리와 장점 - 낙서장",
+  "href": "https://denev6.tistory.com/entry/python-asyncio",
+  "body": "Jul 19, 2022 · 하지만 asyncio의 경우, 파이썬 버전에 따라 많은 변화가 있었다. 아래 글에 포함된 코드는 Python 3.9.12 를 활용해 코드를 실행해 보았다. 특히 3.7 이전의 버전을 활용한다면 아래 글의 예제 코드가 실행되지 않을 수 …"
+}
