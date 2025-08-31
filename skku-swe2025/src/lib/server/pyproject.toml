@@ -1,0 +1,25 @@
+[project]
+name = "server"
+version = "0.0.1"
+description = "SKKU 수강신청 도우미 프로토타입"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "faiss-cpu>=1.11.0",
+    "fastapi>=0.115.12",
+    "gradio>=5.30.0",
+    "huggingface-hub>=0.31.4",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-core>=0.3.60",
+    "langchain-huggingface>=0.2.0",
+    "langchain-openai>=0.3.17",
+    "langchain-text-splitters>=0.3.8",
+    "numpy>=2.2.6",
+    "pytest>=8.4.0",
+    "python-dotenv>=1.1.0",
+    "sentence-transformers>=4.1.0",
+    "torch>=2.7.0",
+    "transformers>=4.51.3",
+    "uvicorn>=0.34.2",
+]
