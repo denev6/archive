@@ -7,7 +7,7 @@
 
 ## Prototype
 
-![Prototype image](/static/prototype.png)
+![Prototype image](./assets/prototype.png)
 
 > 이 프로젝트는 Apple Inc.에서 제공하는 Apple Design Resources를 기반으로 한 시각 자료를 포함하고 있습니다. 해당 자료는 Apple Design Resources License(2023년 6월 21일자)의 조건에 따라 교육 목적(학교 과제)으로만 사용되었으며, 사용자 인터페이스 목업 제작 용도로만 활용되었습니다.
 
